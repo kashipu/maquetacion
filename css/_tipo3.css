@@ -1,0 +1,31 @@
+
+
+
+.content-menu {
+}
+
+.content-menu--header {
+    padding: 1rem;
+    background-color: var(--first);
+}
+
+.content-menu--button {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: var(--h4);
+}
+
+.content-menu--button::after {
+    content: "\25BC";
+    font-size: 1rem;
+}
+
+.collapse--content {
+    border: 1px solid var(--gray);
+}
+
+.collapse--content .collapse--item {
+    padding: .5rem 1.8rem;
+    border-bottom: 1px solid var(--gray);
+}

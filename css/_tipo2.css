@@ -1,0 +1,55 @@
+.library--view {
+}
+
+.library {
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 40%;   
+}
+
+.library--items {
+    padding: 0rem;
+}
+
+.library--filter {
+}
+
+.item--book {
+    display: flex;
+    border-top: var(--border-g);
+    border-bottom: var(--border-g);
+}
+
+.book--image {
+    padding: 1rem 0rem;
+}
+
+.item--data {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.item--data h2 {
+    font-size: var(--h4);
+    font-weight: var(--fw-Medium);
+    text-transform: uppercase;
+}
+
+.data--list {
+    font-size: var(--text);
+    font-weight: var(--fw-Medium);
+}
+
+.data--list--item span {
+    font-weight: var(--fw-Bold);
+}
+
+.data--list--item a {
+    line-height: 5;
+    font-weight: var(--fw-Bold);
+    background-color: var(--color-3);
+    color: var(--color-w);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    padding: .5rem 1rem;
+}
