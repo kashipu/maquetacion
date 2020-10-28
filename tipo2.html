@@ -13,104 +13,130 @@
 </head>
 
 <body>
-    <div class="master--view">
-        <div class="view--header">
-            <header class="header wrapper">
-                <div class="header--logo">
-                    <img src="http://via.placeholder.com/150x50" alt="">
+    <!-- header--view -->
+    <div class="header--view">
+        <header class="header">
+            <div class="header--logos wrapper">
+                <div class="logo--entidad">
+                    <img src="/images/group-4.jpg" alt="Logo, Observatorio de logística, Transporte Minas y Energía">
                 </div>
-                <div class="header--nav">
-                    <nav class="nav">
-                        <li class="nav--item"> <a href="/">Nav1</a></li>
-                        <li class="nav--item"> <a href="/tipo2.html">Nav2</a></li>
-                        <li class="nav--item"> <a href="/tipo3.html">Nav3</a></li>
-                    </nav>
+                <div class="logo--ministerio">
+                    <img src="/images/head-logo-gov.jpg"
+                        alt="Logo, Observatorio de logística, Transporte Minas y Energía">
                 </div>
-        </div>
+            </div>
+            <div class="header--nav">
+                <nav class="nav wrapper">
+                    <li class="nav--item active"> <a href="/">Colombia a un click</a></li>
+                    <li class="nav--item"> <a href="/tipo2.html">Temas DIES</a></li>
+                    <li class="nav--item"> <a href="/tipo3.html">Subdirecciones</a></li>
+                </nav>
+            </div>
         </header>
     </div>
-    <div class="library--view">
-        <div class="library wrapper">
+    <!-- header--view -->
+    <!-- breadcrum--view -->
+    <div class="breadcrum--view wrapper">
+        <div class="breadcrumb--content">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Colombia a un click</a></li>
+                    <li class="breadcrumb-item"><a href="#">Temas DIES</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Estudios</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- breadcrum--view -->
+    <!-- content--view -->
+    <div class="library--view wrapper">
+        <div class="library">
+            <div class="title--content notop">
+                <h1 class="title-h1">
+                    Estudios
+                </h1>
+                <hr>
+            </div>
             <div class="library--items">
-                <div class="item--book gap-y">
+                <div class="item--book">
                     <div class="book--image">
-                        <img src="http://via.placeholder.com/200x280" alt="">
+                        <img src="/images/portada-libro.png" alt="Portada libro">
+                        <a href="#">Consultar</a>
                     </div>
                     <div class="item--data">
-                        <h2>Titulo del documento</h2>
+                        <h2 id="titulo-libro"></h2>
                         <ul class="data--list">
                             <li class="data--list--item">
-                                <h3><span>Tema:</span> Desarrollo Rural</h3>
+                                <h3><strong>Subdirección:</strong>&nbsp;<span id="subdireccion"></span></h3>
                             </li>
                             <li class="data--list--item">
-                                <h3><span>Año:</span> 2019</h3>
+                                <h3><strong>Categoría:</strong>&nbsp;<span id="categoria"></span></h3>
                             </li>
                             <li class="data--list--item">
-                                <h3><span>Oficina:</span> 2019</h3>
+                                <h3><strong>Año:</strong>&nbsp;<span id="year"></span></h3>
                             </li>
                             <li class="data--list--item">
-                                <h3><span>Categoría:</span> Regional</h3>
+                                <h3><strong>Tema:</strong>&nbsp;<span id="tema"></span></h3>
                             </li>
                             <li class="data--list--item">
-                                <a href="#">Descargar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item--book gap-y">
-                    <div class="book--image">
-                        <img src="http://via.placeholder.com/200x280" alt="">
-                    </div>
-                    <div class="item--data">
-                        <h2>Titulo del documento</h2>
-                        <ul class="data--list">
-                            <li class="data--list--item">
-                                <h3><span>Tema:</span> Desarrollo Rural</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><span>Año:</span> 2019</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><span>Oficina:</span> 2019</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><span>Categoría:</span> Regional</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <a href="#">Descargar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="item--book gap-y">
-                    <div class="book--image">
-                        <img src="http://via.placeholder.com/200x280" alt="">
-                    </div>
-                    <div class="item--data">
-                        <h2>Titulo del documento</h2>
-                        <ul class="data--list">
-                            <li class="data--list--item">
-                                <h3><span>Tema:</span> Desarrollo Rural</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><span>Año:</span> 2019</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><span>Oficina:</span> 2019</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><span>Categoría:</span> Regional</h3>
-                            </li>
-                            <li class="data--list--item">
-                                <a href="#">Descargar</a>
+                                <h3><strong>Descripción:</strong>&nbsp;<span id="description"></span></h3>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="library--filter">
-                
+        </div>
+        <div class="library--filter">
+            <h3>Buscar Estudios</h3>
+            <div class="filters">
+                <form>
+                    <div class="filter--group">
+                        <label for="titulo">Estudio</label>
+                        <input type="text" id="titulo">
+                    </div>
+                    <div class="filter--group">
+                        <label for="fuente">Subdirección - Fuente</label>
+                        <select name="fuente" id="fuente">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="filter--group">
+                        <label for="categoria-filtro">Categorías</label>
+                        <select name="fuente" id="categoria-filtro">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="filter--group">
+                        <label for="year-filtro">Año</label>
+                        <select name="fuente" id="year-filtro">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </form>
             </div>
+        </div>
+        <div class="paginator--library">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
     <!-- end deck view -->
@@ -119,6 +145,7 @@
 
         </footer>
     </div>
+    <script type="text/javascript" src="js/data.js"></script>
 </body>
 
 </html>

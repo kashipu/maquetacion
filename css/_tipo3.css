@@ -1,3 +1,82 @@
+.content--header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.content--description {
+    padding-right: 3rem;
+}
+
+.content--description h1 {
+    padding-top: 1rem;
+}
+
+.content--description p {
+    font-family: var(--Work-Sans);
+    line-height: 26px;
+}
+
+.content--menu{
+    background-color: aqua;
+    padding: 10rem;
+}
+
+.content--7030 {
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.content--3070 {
+    padding: 2rem 0rem;
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.content--5050 {
+    padding: 2rem 0rem;
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.content--col1 {
+    background-color: blueviolet;
+    padding: 10rem;
+}
+
+.content--col2 {
+    padding: 10rem;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

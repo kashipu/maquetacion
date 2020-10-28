@@ -11,7 +11,7 @@
     --border-radius-corner: .4rem .4rem 0rem 0rem;
 
     --h1: 1.75rem;
-    --h2: 2.441rem;
+    --h2: 1.25rem;
     --h3: 1.953rem;
     --h4: 1.563rem;
     --h5: 1.25rem;
@@ -25,6 +25,7 @@
     --color-5: #104495;
     --color-6: #6da6ff;
     --color-7: #0d51cc;
+    --color-8: #f5f5f5;
     --color-w: #ffffff;
     --color-b: #2a2a2a;
     --color-g: #e2e2e2;
@@ -192,6 +193,10 @@ body {
 /* Content view */
 .title--content {
     padding: 3rem 0rem;
+}
+
+.notop {
+    padding: 0rem 0rem;
 }
 /* Content view */
 
