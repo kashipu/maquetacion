@@ -26,9 +26,12 @@
                 </div>
             </div>
             <div class="header--nav">
+                <div class="nav--button__burguer">
+                    <a href="#"><span>Menu</span></a>
+                </div>
                 <nav class="nav wrapper">
-                    <li class="nav--item active"> <a href="/">Colombia a un click</a></li>
-                    <li class="nav--item"> <a href="/tipo2.html">Temas DIES</a></li>
+                    <li class="nav--item"> <a href="/">Colombia a un clic</a></li>
+                    <li class="nav--item active"> <a href="/tipo2.html">Temas DIES</a></li>
                     <li class="nav--item"> <a href="/tipo3.html">Subdirecciones</a></li>
                 </nav>
             </div>
@@ -36,107 +39,110 @@
     </div>
     <!-- header--view -->
     <!-- breadcrum--view -->
-    <div class="breadcrum--view wrapper">
-        <div class="breadcrumb--content">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Colombia a un click</a></li>
-                    <li class="breadcrumb-item"><a href="#">Temas DIES</a></li>
-                    <li class="breadcrumb-item active"><a href="#">Estudios</a></li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- breadcrum--view -->
-    <!-- content--view -->
-    <div class="library--view wrapper">
-        <div class="library">
-            <div class="title--content notop">
-                <h1 class="title-h1">
-                    Estudios
-                </h1>
-                <hr>
+    <div class="master--view">
+        <div class="breadcrum--view wrapper">
+            <div class="breadcrumb--content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Colombia a un click</a></li>
+                        <li class="breadcrumb-item"><a href="#">Temas DIES</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Estudios</a></li>
+                    </ol>
+                </nav>
             </div>
-            <div class="library--items">
-                <div class="item--book">
-                    <div class="book--image">
-                        <img src="/images/portada-libro.png" alt="Portada libro">
-                        <a href="#">Consultar</a>
-                    </div>
-                    <div class="item--data">
-                        <h2 id="titulo-libro"></h2>
-                        <ul class="data--list">
-                            <li class="data--list--item">
-                                <h3><strong>Subdirección:</strong>&nbsp;<span id="subdireccion"></span></h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><strong>Categoría:</strong>&nbsp;<span id="categoria"></span></h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><strong>Año:</strong>&nbsp;<span id="year"></span></h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><strong>Tema:</strong>&nbsp;<span id="tema"></span></h3>
-                            </li>
-                            <li class="data--list--item">
-                                <h3><strong>Descripción:</strong>&nbsp;<span id="description"></span></h3>
-                            </li>
-                        </ul>
+        </div>
+        <!-- breadcrum--view -->
+        <!-- content--view -->
+        <div class="library--view wrapper">
+            <div class="library">
+                <div class="title--content notop">
+                    <h1 class="title-h1">
+                        Estudios
+                    </h1>
+                    <hr>
+                </div>
+                <div class="library--items">
+                    <div class="item--book">
+                        <div class="book--image">
+                            <img src="/images/portada-libro.png" alt="Portada libro">
+                        </div>
+                        <div class="item--data">
+                            <h2 id="titulo-libro"></h2>
+                            <ul class="data--list">
+                                <li class="data--list--item">
+                                    <h3><strong>Subdirección:</strong>&nbsp;<span id="subdireccion"></span></h3>
+                                </li>
+                                <li class="data--list--item">
+                                    <h3><strong>Categoría:</strong>&nbsp;<span id="categoria"></span></h3>
+                                </li>
+                                <li class="data--list--item">
+                                    <h3><strong>Año:</strong>&nbsp;<span id="year"></span></h3>
+                                </li>
+                                <li class="data--list--item">
+                                    <h3><strong>Tema:</strong>&nbsp;<span id="tema"></span></h3>
+                                </li>
+                                <li class="data--list--item">
+                                    <h3><strong>Descripción:</strong>&nbsp;<span id="description"></span></h3>
+                                </li>
+                            </ul>
+                            <a href="#">Consultar</a>
+                            <a href="#">Consultar</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="library--filter">
-            <h3>Buscar Estudios</h3>
-            <div class="filters">
-                <form>
-                    <div class="filter--group">
-                        <label for="titulo">Estudio</label>
-                        <input type="text" id="titulo">
-                    </div>
-                    <div class="filter--group">
-                        <label for="fuente">Subdirección - Fuente</label>
-                        <select name="fuente" id="fuente">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="filter--group">
-                        <label for="categoria-filtro">Categorías</label>
-                        <select name="fuente" id="categoria-filtro">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="filter--group">
-                        <label for="year-filtro">Año</label>
-                        <select name="fuente" id="year-filtro">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                </form>
+            <div class="library--filter">
+                <h3>Buscar Estudios</h3>
+                <div class="filters">
+                    <form>
+                        <div class="filter--group">
+                            <label for="titulo">Estudio</label>
+                            <input type="text" id="titulo">
+                        </div>
+                        <div class="filter--group">
+                            <label for="fuente">Subdirección - Fuente</label>
+                            <select name="fuente" id="fuente">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="filter--group">
+                            <label for="categoria-filtro">Categorías</label>
+                            <select name="fuente" id="categoria-filtro">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="filter--group">
+                            <label for="year-filtro">Año</label>
+                            <select name="fuente" id="year-filtro">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="paginator--library">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
+            <div class="paginator--library">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
     <!-- end deck view -->
@@ -147,5 +153,6 @@
     </div>
     <script type="text/javascript" src="js/data.js"></script>
 </body>
+<link rel="stylesheet" href="/css/_media_queries.css">
 
 </html>

@@ -81,10 +81,15 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .gap-y {
     padding: 1.5rem 0rem;
+}
+
+.master--view {
+    padding: 1.5rem;
 }
 
 
@@ -101,21 +106,30 @@ body {
     background-color: var(--color-2);
 }
 
-.header--item {
-    display: inline-block;
-}
-
 .nav {
     padding: 1rem 0rem;
+    display: flex;
 }
 
 .nav--item {
-    display: inline-block;
     padding: .5rem 1rem ;
+    list-style: none;
+}
+
+.nav--button__burguer{
+    background-color: var(--color-7);
+    padding: 1.2rem 1.5rem;
+    text-align: right;
+    display: none;
+}
+
+.nav--button__burguer a {
+    text-decoration: none;
+    font-weight: var(--fw-Bold);
+    color: var(--color-b);
 }
 
 .nav--item:first-child {
-    display: inline-block;
     padding-left: 0rem ;
 }
 
@@ -134,7 +148,6 @@ body {
     color: var(--color-1);
     border-bottom: var(--border-1);
 }
-
 /* header styles */
 
 /* Breadcrumb view  */
@@ -148,7 +161,6 @@ body {
     flex-wrap: wrap;
     padding: 0.75rem 0rem;
     list-style: none;
-    background-color: var(--color-w);
 }
 
 .breadcrumb-item a {
@@ -188,6 +200,7 @@ body {
 
 .i-nav--content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -230,78 +243,6 @@ body {
 
 /* geovisor--view */
 
-
-/* slider styles */
-
-.slider img {
-    width: 100%;
-    height: 80vh;
-}
-
-/* slider styles */
-
-/* deck styles */
-.deck--view {
-    padding: 1rem;
-}
-
-.deck {
-    display: flex;
-    align-items: center;
-}
-
-/* .deck__color1{
-    background-color: lightslategray;
-}
-
-.deck__color2{
-    background-color: lightcoral;
-}
-
-.deck__color3{
-    background-color: lightslategray;
-} */
-
-.deck--items {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: space-around;
-    
-}
-
-.deck--button {
-    flex-grow: 1;
-}
-
-.item--card {
-    border: var(--border-2);
-    border-radius: var(--border-radius);
-    margin: 1rem;
-    text-align: center;
-}
-
-.card--title {
-    background-color: var(--color-2);
-    padding: .5rem 2rem;
-    border-radius: var(--border-radius-corner);
-    font-weight: var(--fw-Bold);
-    color: var(--color-w);
-
-}
-
-.card--number {
-    padding: .5rem 3rem;
-    font-size: var(--h3);
-    font-weight: var(--fw-Medium);
-}
-
-.card--subtitle {
-    padding-bottom: .5rem;
-}
-
-/* deck styles */
-
 /* footer styles */
 
 .footer {
@@ -311,3 +252,4 @@ body {
 }
 
 /* footer styles */
+
