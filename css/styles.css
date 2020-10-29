@@ -11,8 +11,8 @@
     --border-radius-corner: .4rem .4rem 0rem 0rem;
 
     --h1: 1.75rem;
-    --h2: 1.25rem;
-    --h3: 1.953rem;
+    --h2: 1.5rem;
+    --h3: 1.2rem;
     --h4: 1.563rem;
     --h5: 1.25rem;
     --h6: 0.8rem;
@@ -20,18 +20,17 @@
 
     --color-1: #0055cf;
     --color-2: #e3eafb;
-    --color-3: #949494;
+    --color-3: #979797;
     --color-4: #104495;
     --color-5: #104495;
-    --color-6: #6da6ff;
-    --color-7: #0d51cc;
+    --color-6: #e2e2e2;
+    --color-7: #b2c4ee;
     --color-8: #f5f5f5;
     --color-w: #ffffff;
     --color-b: #2a2a2a;
     --color-g: #e2e2e2;
 
     --Work-Sans: 'Work Sans', sans-serif;
-    --Open-Sans: 'Open Sans', sans-serif;
     --fw-Regular: 400;
     --fw-Medium: 500;
     --fw-Semibold: 600;
@@ -46,7 +45,28 @@
     font-size: var(--h1);
 }
 
+.title-h2 {
+    font-size: var(--h2);
+    font-weight: var(--fw-Medium);
+}
+
 /* titles */
+
+/* Colors */
+
+.color__1 {
+    color: var(--color-1);
+}
+
+.bg-color__7 {
+    background-color: var(--color-7);
+}
+
+/* borders */
+
+.border-radious {
+    border-radius: var(--border-radius);
+}
 
 .bfix {
     border: 1px solid red
@@ -54,7 +74,7 @@
 
 body {
     box-sizing: border-box;
-    font-family: var(--Open-Sans);
+    font-family: var(--Work-Sans);
 }
 
 .wrapper {
