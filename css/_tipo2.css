@@ -63,6 +63,10 @@
     margin-bottom: 2rem;
 }
 
+.item--data {
+    line-height: 1.6;
+}
+
 .item--data a {
     margin-right: 1rem;
     border: 2px solid var(--color-1);
@@ -74,14 +78,16 @@
     padding: .5rem 1.5rem;
 }
 
-.item--data {
-    line-height: 1.6;
+.item--data a:hover {
+    color: var(--color-w);
+    background-color: var(--color-1);
 }
+
 
 .item--data h2 {
     font-size: var(--h2);
     font-family: var(--Work-Sans);
-    font-weight: var(--fw-Semibold);
+    font-weight: var(--fw-Medium);
     line-height: 1.35;
     margin-bottom: 1.2rem;
 }
@@ -102,6 +108,8 @@
 
 .paginator--library {
     padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination {
