@@ -24,12 +24,12 @@
                 </div>
             </div>
             <div class="header--nav">
-                <div class="nav--button__burguer wrapper noshow">
-                    <a id="burguermenu" href="#">
-                        <div class="burguer"><span class="h3">Menu</span><img src="/images/menu.svg" alt=""></div>
+                <div class="nav--button__burguer wrapper">
+                    <a id="burguermenu" onclick="collapse()" href="#">
+                        <div class="burguer"><span class="h3">Menu</span><img src="/images/icons/menu.svg" alt=""></div>
                     </a>
                 </div>
-                <nav class="nav wrapper">
+                <nav id="menuCollapse" class="nav wrapper show">
                     <ul>
                         <li class="nav--item active"><a href="/">Colombia a un clic</a></li>
                         <li class="nav--item"> <a href="/tipo2.html">Temas DIES</a></li>
@@ -46,6 +46,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Colombia a un click</a></li>
                     <li class="breadcrumb-item active"><a href="#">Geovisores</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Geovisores Generales</a></li>
                 </ol>
             </nav>
         </section>
@@ -92,6 +93,8 @@
     <footer class="footer">
 
     </footer>
+    <link rel="stylesheet" href="/css/_media_queries.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
