@@ -12,85 +12,87 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- header--view -->
-        <header class="header">
-            <div class="header--logos wrapper">
-                <div class="logo--entidad">
-                    <img src="/images/logoObservatorio.jpg"
-                        alt="Logo, Observatorio de logística, Transporte Minas y Energía">
-                </div>
-                <div class="logo--ministerio">
-                    <img src="/images/logoPlaneacion.jpg"
-                        alt="Logo, Observatorio de logística, Transporte Minas y Energía">
-                </div>
-            </div>
-            <div class="header--nav">
-                <div class="nav--button__burguer wrapper">
-                    <a id="burguermenu" onclick="collapse()" href="#">
-                        <div class="burguer"><span class="h3">Menu</span><img src="/images/icons/menu.svg" alt=""></div>
-                    </a>
-                </div>
-                <nav id="menuCollapse" class="nav wrapper show">
-                    <ul>
-                        <li class="nav--item active"><a href="/">Colombia a un clic</a></li>
-                        <li class="nav--item"> <a href="/tipo2.html">Temas DIES</a></li>
-                        <li class="nav--item"> <a href="/tipo3.html">Subdirecciones</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- header--view -->
 
-        <!-- breadcrumb--view   -->
-        <section class="breadcrum--view wrapper">
-            <nav aria-label="Navegación miga de pan">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Colombia a un click</a></li>
-                    <li class="breadcrumb-item active"><a href="#">Geovisores</a></li>
-                    <li class="breadcrumb-item active"><a href="#">Geovisores Generales</a></li>
-                </ol>
+    <!-- header--view -->
+    <header class="header">
+        <div class="header--logos wrapper">
+            <div class="logo--entidad">
+                <img src="/images/logoObservatorio.jpg"
+                    alt="Logo, Observatorio de logística, Transporte Minas y Energía">
+            </div>
+            <div class="logo--ministerio">
+                <img src="/images/logoPlaneacion.jpg" alt="Logo, Departamento nacional de planeación">
+            </div>
+        </div>
+        <div class="header--nav">
+            <div class="nav--button__burguer wrapper">
+                <a id="burguermenu" href="#" aria-label="Menú desplegable">
+                    <label for="checkbox"  class="burguer"><span class="h3">Menu</span><img src="/images/icons/menu.svg"></label>
+                </a>
+            </div>
+            <input class="menu-checkbox" type="checkbox" id="checkbox">
+            <nav id="menuCollapse" class="nav wrapper">
+                <ul>
+                    <li class="nav--item active"><a href="/">Colombia a un clic</a></li>
+                    <li class="nav--item"> <a href="/tipo2.html">Temas DIES</a></li>
+                    <li class="nav--item"> <a href="/tipo3.html">Subdirecciones</a></li>
+                </ul>
             </nav>
-        </section>
-
-        <!-- breadcrumb--view   -->
-
-        <!-- Section buttons nav -->
-        <main>
-            <section class="buttonsNav--view wrapper">
-                <div class="buttonsNav--content">
-                    <div class="buttonNav--items">
-                        <a href="#">Logística</a>
-                        <div class="svg-button logistica"></div>
-                    </div>
-                    <div class="buttonNav--items">
-                        <a href="#">Transporte</a>
-                        <div class="svg-button transporte"></div>
-                    </div>
-                    <div class="buttonNav--items">
-                        <a href="#">Movilidad</a>
-                        <div class="svg-button movilidad"></div>
-                    </div>
-                    <div class="buttonNav--items">
-                        <a href="#">Minas y energía</a>
-                        <div class="svg-button minas"></div>
-                    </div>
-                </div>
+        </div>
+    </header>
+    <!-- header--view -->
+    <div class="background">
+        <div class="container">
+            <!-- breadcrumb--view   -->
+            <section class="breadcrum--view wrapper">
+                <nav aria-label="Navegación miga de pan">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Colombia a un click</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Geovisores</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Geovisores Generales</a></li>
+                    </ol>
+                </nav>
             </section>
+
+            <!-- breadcrumb--view   -->
+
             <!-- Section buttons nav -->
+            <main>
+                <section class="buttonsNav--view wrapper">
+                    <div class="buttonsNav--content">
+                        <div class="buttonNav--items">
+                            <a href="#">Logística</a>
+                            <div class="svg-button logistica"></div>
+                        </div>
+                        <div class="buttonNav--items">
+                            <a href="#">Transporte</a>
+                            <div class="svg-button transporte"></div>
+                        </div>
+                        <div class="buttonNav--items">
+                            <a href="#">Movilidad</a>
+                            <div class="svg-button movilidad"></div>
+                        </div>
+                        <div class="buttonNav--items">
+                            <a href="#">Minas y energía</a>
+                            <div class="svg-button minas"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section buttons nav -->
 
-            <!-- geovisor--view -->
-            <section class="geovisor--view wrapper">
-                <div class="h1">
-                    <h1>Colombia a un clic</h1>
-                    <hr>
-                </div>
-                <div class="geovisor">
-                    <!-- Aqui va el iframe -->
-                </div>
-            </section>
-            <!-- geovisor--view -->
-        </main>
+                <!-- geovisor--view -->
+                <section class="geovisor--view wrapper">
+                    <div class="h1">
+                        <h1>Colombia a un clic</h1>
+                        <hr>
+                    </div>
+                    <div class="geovisor">
+                        <!-- Aqui va el iframe -->
+                    </div>
+                </section>
+                <!-- geovisor--view -->
+            </main>
+        </div>
     </div>
     <footer class="footer">
 

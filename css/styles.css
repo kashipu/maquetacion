@@ -25,6 +25,7 @@
     --gray:#626262;
     --grayl:#9e9e9e;
     --grayl2:#e2e2e2;
+    --grayl3:#f8f8f8;
     --blue-l1: #dde7fb;
     --blue-l2: #c5d4ef;
     --blue-l3: #6da6ff;
@@ -43,14 +44,6 @@
 
 .bfix {
     border: 1px solid red;
-}
-
-.noshow {
-    display: none;
-}
-
-.show {
-    display: block;
 }
 /* Variables */
 
@@ -138,7 +131,18 @@ body {
     line-height: 1.6;
 }
 
+.background {
+    background-color: var(--grayl3);
+}
+
 .container {
+    background-color: var(--white);
+    border-left: 1px solid var(--grayl2);
+    border-right: 1px solid var(--grayl2);
+    border-bottom: 1px solid var(--grayl2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -176,7 +180,7 @@ body {
 }
 
 .header--nav {
-    background-color: var(--blue-l1);
+    background-color: var(--blue-l1); 
 }
 /* header view styles */
 
@@ -191,7 +195,6 @@ body {
     text-decoration: none;
     font-weight: var(--fw-Bold);
     color: var(--color-b);
-    
 }
 
 .burguer {
@@ -199,6 +202,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight: var(--Semibold);
+    cursor: pointer;
 }
 
 .burguer img {
@@ -207,6 +211,10 @@ body {
 
 .burguer span {
     width: 20px;
+}
+
+.nav {
+    display: none;
 }
 
 .nav ul {
@@ -239,6 +247,7 @@ body {
     color: var(--blue);
     border-bottom: 2px solid var(--blue);
 }
+
 /* Navigation view styles */
 
 /* header styles */
@@ -555,12 +564,16 @@ a:focus {
 .sbd-menu summary {
     cursor: pointer;
     background-color: var(--blue-l3);
-    
     padding: .5rem 1.2rem; 
     font-weight: var(--Semibold);
     list-style: none;
     border: 1px solid var(--gray);
     border-radius: 5px 5px 0px 0px;
+}
+
+.sbd-menu summary {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sbd-menu summary::-webkit-details-marker {
@@ -810,12 +823,17 @@ a:focus {
 /* footer styles */
 .footer {
     padding: 10rem;
-    margin-top: 3rem;
     background-color: var(--blue);
 }
 /* footer styles */
 
+#checkbox {
+    display: none;
+}
 
+#checkbox:checked ~ #menuCollapse {
+    display: block;
+}
 
 
 
