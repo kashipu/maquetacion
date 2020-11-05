@@ -19,24 +19,47 @@
                     alt="Logo, Observatorio de logística, Transporte Minas y Energía">
             </div>
             <div class="logo--ministerio">
-                <img src="/images/logoPlaneacion.jpg" alt="Logo, Observatorio de logística, Transporte Minas y Energía">
+                <img src="/images/logoPlaneacion.jpg" alt="Logo, Departamento nacional de planeación">
             </div>
         </div>
-        <div class="header--nav">
-            <div class="nav--button__burguer wrapper">
-                <a id="burguermenu" onclick="collapse()" href="#">
-                    <label for="checkbox" class="burguer"><span class="h3">Menu</span><img src="/images/icons/menu.svg"
-                            alt=""></label>
-                </a>
+        <div class="nav--view">
+            <div class="general--navbar wrapper">
+                <div class="nav--button__burguer">
+                    <p>Menú</p>
+                    <button aria-label="Menú desplegable" id="burguer" aria-expanded="false" onclick="collapse()"><img
+                            src="/images/icons/menu.svg"></button>
+                </div>
+                <nav id="navbar" class="nav">
+                    <ul class="nav--list">
+                        <li class="nav--item"> <a aria-haspopup="true" href="/">Colombia a un click <img
+                                    src="/images/icons/chevron-down-solid.svg" alt="Icono menú"></a>
+                            <ul class="nav--dropdown">
+                                <li class="dropdown--item"><a href="/">Geovisores</a></li>
+                                <li class="dropdown--item"><a href="/">Indicadores</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav--item"> <a aria-haspopup="true" href="/tipo2.html">Temas DIES <img
+                                    src="/images/icons/chevron-down-solid.svg" alt=""></a>
+                            <ul class="nav--dropdown">
+                                <li class="dropdown--item"><a href="/">Organigrama</a></li>
+                                <li class="dropdown--item"><a href="/">Estudios</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="nav--item"> <a aria-haspopup="true" href="/tipo3.html">Subdirecciones<img
+                                    src="/images/icons/chevron-down-solid.svg" alt=""></a>
+                            <ul class="nav--dropdown">
+                                <li class="dropdown--item"><a href="/">Logística</a></li>
+                                <li class="dropdown--item"><a href="/">Transporte</a></li>
+                                <li class="dropdown--item"><a href="/">Movilidad</a></li>
+                                <li class="dropdown--item"><a href="/">Minas y energía</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <input class="menu-checkbox" type="checkbox" id="checkbox">
-            <nav id="menuCollapse" class="nav wrapper">
-                <ul>
-                    <li class="nav--item active"><a href="/">Colombia a un clic</a></li>
-                    <li class="nav--item"> <a href="/tipo2.html">Temas DIES</a></li>
-                    <li class="nav--item"> <a href="/tipo3.html">Subdirecciones</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <!-- header--view -->
@@ -430,8 +453,8 @@
 
         </footer>
     </div>
-    <script type="text/javascript" src="js/data.js"></script>
     <link rel="stylesheet" href="/css/_media_queries.css">
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
