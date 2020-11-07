@@ -40,6 +40,10 @@
         display: block;
     }
 
+    .noshow {
+        display: none;
+    }
+
     .nav--item:hover .nav--dropdown {
         display: block;
     }
@@ -173,6 +177,12 @@
 
     .info--cards {
         justify-content: center;
+    }
+
+    .sticky-content {
+        position: fixed;
+        top: 4rem;
+        right: 0%;
     }
 
 }

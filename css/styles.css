@@ -204,6 +204,18 @@ body {
     background-color: var(--blue-l1);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky-content {
+    position: fixed;
+    top: 4rem;
+    right: .1rem;
+}
+
 .nav--button__burguer {
     display: none;
 }
@@ -317,6 +329,9 @@ body {
     border: 2px solid var(--blue);
     border-radius: 6px;
     padding: .5rem 1.5rem;
+    -webkit-box-shadow: 4px 3px 7px 0px rgba(209, 209, 209, 1);
+    -moz-box-shadow: 4px 3px 7px 0px rgba(209, 209, 209, 1);
+    box-shadow: 4px 3px 7px 0px rgba(209, 209, 209, 1);
 }
 
 .buttonNav--items a {
@@ -326,14 +341,14 @@ body {
 }
 
 .buttonNav--items:hover {
-    background-color: var(--blue);
+    background-color: var(--blue-l2);
     color: var(--white);
 }
 
-.buttonNav--items:hover a {
+/* .buttonNav--items:hover a {
     background-color: var(--blue);
     color: var(--white);
-}
+} */
 
 .svg-button {
     width: 35px;
@@ -358,7 +373,7 @@ body {
     background-image: url(/images/icons/minasIcon.svg);
 }
 
-.buttonNav--items:hover .logistica {
+/* .buttonNav--items:hover .logistica {
     background-image: url(/images/icons/white/logisticaIcon.svg);
 }
 
@@ -372,7 +387,7 @@ body {
 
 .buttonNav--items:hover .minas {
     background-image: url(/images/icons/white/minasIcon.svg);
-}
+} */
 
 /* Section buttons nav */
 
@@ -589,6 +604,10 @@ a:focus {
 
 .sbd-menu summary::-webkit-details-marker {
     display: none
+}
+
+.sbd-menu summary p{
+    margin-right: .5rem;
 }
 
 .sbd-menu ol {
@@ -852,13 +871,19 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/images/parallax.jpg"); /* The image used */
-    height: 500px; /* Set a specific height */
+    background-image: url("/images/parallax.jpg");
+    /* The image used */
+    height: 500px;
+    /* Set a specific height */
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax-antena {
+    background-image: url("/images/portadaLibro.png");
 }
 
 .parallax--text {
@@ -867,5 +892,5 @@ td {
     font-size: var(--h1);
     padding: 2rem;
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.75);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
 }
