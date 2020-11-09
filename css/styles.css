@@ -771,7 +771,7 @@ td {
     text-align: center;
     font-weight: normal;
     font-size: 1.1rem;
-    color: white;
+    color: var(--black);
 }
 
 .content--table th:last-child {
