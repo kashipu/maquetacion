@@ -357,20 +357,20 @@ body {
 }
 
 .logistica {
-    background-image: url(/images/icons/logisticaIcon.svg);
+    background-image: url(../images/icons/logisticaIcon.svg);
 }
 
 .transporte {
     margin-top: 4px;
-    background-image: url(/images/icons/transporteIcon.svg);
+    background-image: url(../images/icons/transporteIcon.svg);
 }
 
 .movilidad {
-    background-image: url(/images/icons/movilidadIcon.svg)
+    background-image: url(../images/icons/movilidadIcon.svg)
 }
 
 .minas {
-    background-image: url(/images/icons/minasIcon.svg);
+    background-image: url(../images/icons/minasIcon.svg);
 }
 
 /* .buttonNav--items:hover .logistica {
@@ -871,7 +871,7 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/images/parallax.jpg");
+    background-image: url("images/parallax.jpg");
     /* The image used */
     height: 500px;
     /* Set a specific height */
@@ -883,7 +883,7 @@ td {
 }
 
 .parallax-antena {
-    background-image: url("/images/portadaLibro.png");
+    background-image: url("images/portadaLibro.png");
 }
 
 .parallax--text {
